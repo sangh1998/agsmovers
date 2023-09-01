@@ -1,0 +1,308 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+  }
+  .tophead {
+    background-color: #34313a;
+    font-size: 12px;
+
+  }
+  .navbar form{
+    margin-left: 6vh;
+
+  }
+  .tophead .d-lg-flex{
+    position: relative;
+    top:8px;
+  }
+  .tophead .leftgroup a{
+    color:white;
+    display: inline-block;
+    transform: skewX(30deg);
+    padding: 10px;
+  }
+  .tophead .leftgroup a:hover{
+    color:#b00000;
+  }
+  .tophead .leftgroup li {
+    transform: skew(-30deg);
+    margin: -10px 10px;
+  }
+  .tophead .leftgroup li:hover{
+    background-color:rgb(248,249,250);
+  }
+  @media only screen and (max-width:560px){
+    .tophead{
+      font-size: 11px;
+    }
+    .tophead .rightgroup .justify-content-end{
+      margin-right: 110px;
+    }
+    .tophead .d-lg-flex{
+      position:relative;
+      top:0px;
+    }
+  }
+  .leftgroup  ul li{
+    margin-inline-end: 30px;
+  }
+  .rightgroup  ul li{
+    margin-inline-start: 22px;
+  }
+  .rightgroup select{
+    background-color:#34313a;
+    color:white;
+    width: 100px;
+  }
+  .navbar form{
+    margin:0;
+    
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
+  .navbar form .btn , #footer-btn{
+    border:0px solid #b00000;
+    background-color: #b00000;
+    width: 150px;
+    height:30px;
+    position: relative;
+    left:0px;
+    font-weight:bold;
+    font-size:14px;
+
+  }
+  @media only screen and (max-width:560px){
+    .mid-section .container{
+        position: relative;
+         top:0px;
+    }
+}
+  .mid-section .container{
+    position: relative;
+         top:-50px;
+         z-index:10;
+         color:#b00000;
+  }
+  .information .btn{
+    border:1px solid #b00000;
+    border-radius: 0px;
+    padding:8px 20px;
+    color:#b00000;
+  }
+  .information #btn ,#btnt{
+    color:white;
+    background-color: #b00000;
+  }
+  .information .container .card-img-top:hover{
+    transform: scale(1.15);
+    transition-duration: 0.5s;
+  }
+  .information .container .img{
+    overflow: hidden;
+  }
+  @media only screen and (max-width:560px){
+    .information #btn ,#btnt{
+      margin-top: 10px;
+    }
+   .client .col-lg-6 {
+        text-align: center;
+    }
+    .client .text-justify{
+        text-align: justify;
+    }
+    
+  }
+
+  .client .text-justify{
+    text-align: justify;
+   }
+
+  .domestic .service-title{
+    font-size: 18px;
+    color: white;
+    padding-top: 15px;
+
+  }
+  .domestic .container img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+  .domestic .text-center{
+    font-size: 11px;
+    padding-top: 10px;
+  }
+  .client .container .row p{
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .world{
+    background-image: url(/assest/img/removals_bg.jpg);
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+  }
+  .world .numbers ,.numbers-1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    opacity: 1; 
+    transition: all 1s ease 0s;
+    text-shadow: 2px 2px 6px white ;
+  }
+  .world .numbers::before{
+    content: "+";
+    position: relative;
+    left:190px;
+    top:-30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .world .numbers sub{
+    font-size: 20px;
+  }
+  .world .numbers-lable{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -30px;
+  }
+  .world .btn{
+    border:1px solid #b00000;
+    width: 250px;
+    text-align: center;
+    border-radius: 0%;
+    background-color: #b00000;
+    color:white;
+    font-weight: 500;
+    padding: 10px 50px;
+  }
+ 
+  @media only screen and (max-width:560px){
+    .world .btn{
+        margin-left: 30%;
+    }
+  }
+.worldwide p{
+    font-size: 18px;
+    text-align: justify;
+    margin:0px 150px;
+    padding-top: 20px;
+}
+.worldwide .wide .btn{
+    border: 2px solid #b00000;
+    padding: 13px 60px;
+}
+.worldwide .wide #wide{
+    background-color: #b00000;
+    padding: 13px 50px;
+    border: 0px solid red;
+}
+.footer .row a{
+  color:#878191;
+}
+/*----ags group start--*/
+
+.ags-group .red .ags-card .rounded-0{
+  width: 21rem;
+  
+}
+.ags-group .red .ags-card .rounded-0 .extra{
+   background: rgba(0,0,0,0.4);
+   color:white;
+   font-weight: bold;
+   text-align: center;
+   padding:10px 30px
+}
+.ags-group .red .ags-card .card-title{
+ font-weight: bold;
+ font-size: 18px;
+ margin:10px 0px;
+ text-align: center;
+ color:#b91f25!important;
+}
+.ags-group .red .ags-card .card-text{
+  font-size: 14px;
+  text-align: center;
+  margin:0px 5px;
+  color:dimgrey;
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+@media only screen and (max-width:560px){
+  .ags{
+    margin:50px 50px;
+  }
+}
+/*----ags group end--*/
+.world-relocation{
+  background-image: url(/assest/img/ags-relocation-figures.jpg);
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+}
+.world-relocation .numbers ,.numbers-1{
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 1; 
+  transition: all 1s ease 0s;
+  text-shadow: 2px 2px 6px white ;
+}
+.world-relocation .numbers-lable{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -30px;
+}
+.world-relocation .btn{
+  border:1px solid #b00000;
+  width: 250px;
+  text-align: center;
+  border-radius: 0%;
+  background-color: #b00000;
+  color:white;
+  font-weight: 500;
+  padding: 10px 50px;
+}
+.worldwide .outer-cover{
+  border:2px solid #878191;
+  height: 100%;
+  transform:skewX(-30deg)
+}
+.worldwide .inner-cover{
+  height:13vh;
+  transform: skewX(30deg);
+  padding:20px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+.world-relocation #num1::before{
+  content: "Km";
+  position: relative;
+  left:150px;
+  top:-20px;
+  font-size: 20px;
+}
+.world-relocation #num::before{
+  content: "Million";
+  position: relative;
+  left:130px;
+  top:0px;
+  font-size:18px;
+}
+.center{
+  justify-content: center;
+  background-color: #878191;
+  border: 1px solid black;
+  width: 20%;
+  text-align: center;
+
+}
+
+
+
+
