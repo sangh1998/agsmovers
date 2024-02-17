@@ -9,36 +9,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assest/css/css.css">
+    <link rel="stylesheet" href="./assest/css/responsive.css">
 </head>
 
 <body>
-    <header class="sticky-top shadow mb-2 bg-body rounded">
-        <div class="tophead">
-            <div class="container">
-                <div class="d-lg-flex justify-content-lg-between">
-                    <div class=" leftgroup">
-                        <ul class="list-unstyled d-flex justify-content-start text-white" id="left-bar">
-                            <li><a href="./ags-group.html" id="AGS">AGS Group</a></li>
-                            <li><a href="./relocation.html" id="Relocation">Relocation</a></li>
-                            <li><a href="./records-management.html" id="Record">Record Management</a></li>
-                            <li><a href="./index.html" id="world">WorldWide Movers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 rightgroup">
-                        <ul class="list-unstyled d-flex justify-content-end">
-                            <li>
-                                <select class="list-unstyled border-0">
-                                    <option><a href="#">English</a></option>
-                                    <option><a href="#">Francais</a></option>
-                                    <option><a href="#">Dutch</a></option>
-                                    <option><a href="#">Dutch</a></option>
-                                </select>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <header class="sticky-top shadow bg-body rounded">
+      <div class="tophead">
+        <div class="container">
+          <div class="d-lg-flex justify-content-lg-between">
+            <div class="leftgroup">
+              <ul class="list-unstyled d-flex justify-content-start text-white" id="left-bar">
+                <li class="nav_link"><a href="./ags-group.html" id="AGS">AGS Group</a></li>
+                <li class="nav_link"><a href="./relocation.html" id="Relocation">Relocation</a></li>
+                <li class="nav_link"><a href="./records-management.html" id="Record">Record Management</a></li>
+                <li class="nav_link active"><a href="./index.html" id="world">WorldWide Movers</a></li>
+              </ul>
             </div>
+            <div class=" rightgroup">
+              <ul class="list-unstyled d-flex justify-content-end">
+                <li>
+                  <select class="list-unstyled border-0 ">
+                    <option><a href="#">English</a></option>
+                    <option><a href="#">Francais</a></option>
+                    <option><a href="#">Dutch</a></option>
+                    <option><a href="#">Dutch</a></option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
         <downhead>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container d-flex">
@@ -53,19 +54,257 @@
                     <div class="collapse navbar-collapse ps-lg-5 justify-content-end" id="navbarSupportedContent1">
                         <ul class="navbar-nav mb-lg-0" style="font-size: 14px;">
                             <li class="nav-item ms-3">
-                                <a class="nav-link" href="#">HOME</a>
+                                <a class="nav-link" href="relocation.html">HOME</a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link" href="#">OUR VALUES</a>
+                              <div class="drop">
+
+                                <button class="nav-link dropbtn bg-light" onclick="myFunction()" id="dropbtn">OUR VALUES
+                                </button>
+                                <div class="drop-content " id="myDropdown">
+                                  <div class="header">
+              
+                                    <div class="row py-5 mx-auto container justify-content-between">
+                                      <div class="col-7">
+                                        <h6 class="border-bottom pb-2">WHY CHOOSE US</h6>
+              
+                                        <div class=" text-center">
+                                          <div class="row row-cols-auto">
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/our-global-network-ags.png" alt="">
+                                              <p>Our global network</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/2.png" alt="">
+                                              <p>Moving towards the future</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/3.png" alt="">
+                                              <p>Quality & accreditations</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/4.png" alt="">
+                                              <p>The excellence of our staff</p>
+                                            </div>
+                                          </div>
+                                        </div>
+              
+                                        <div class=" text-center pt-3">
+                                          <div class="row row-cols-auto">
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/5.png" alt="">
+                                              <p>Your satisfaction</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/6.png" alt="">
+                                              <p>Security</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/7.png" alt="">
+                                              <p>Planète Urgence</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/8.png" alt="">
+                                              <p>Compliance</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+              
+                                      <div class="col-4">
+                                        <h6 class="border-bottom pb-2">ABOUT AGS WORLDWIDE MOVERS</h6>
+              
+                                        <div class="text-start">
+                                          <div class="col col-rows-auto">
+                                            <div class="row">
+                                              <a href="">Mission statement</a>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row">
+                                                <a href="">Our success story</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row">
+                                                <a href="">Our values and commitments</a>
+                                              </div>
+                                            </div>
+              
+                                          </div>
+                                        </div>
+              
+                                        <h6 class="border-bottom pb-2 pt-4 ">CORPORATE SOCIAL RESPONSIBILITY</h6>
+                                        <div class=" text-start">
+                                          <div class="col col-rows-auto">
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href="">Training</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href="">
+                                                  Our people</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href="">Our environment</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row">
+                                                <a href="">Health and safety</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href="">Carbon Footprint</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+              
+              
+                              </div>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link" href="#">OUR SERVICES</a>
+                              <div class="drop">
+              
+                                <button class="nav-link dropbtn bg-light" id="dropbtn2" onclick="myFunction2()">OUR SERVICES
+                                </button>
+                                <div class="drop-content" id="myDropdown2">
+                                  <div class="header">
+              
+                                    <div class="row py-5 mx-auto container justify-content-between">
+                                      <div class="col-7">
+                                        <h6 class="border-bottom pb-2">OUR CORE SERVICES</h6>
+              
+                                        <div class=" text-center">
+                                          <div class="row row-cols-auto">
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/9.png" alt="">
+                                              <p>International moves</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/10.png" alt="">
+                                              <p>Domestic moves</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/11.png" alt="">
+                                              <p>Secure storage</p>
+                                            </div>
+                                            <div class="col-3">
+                                              <img src="./assest/img/choose ags/12.png" alt="">
+                                              <p>Vehicle transport</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <h6 class="border-bottom pb-2">OUR COMPLEMENTARY SERVICES</h6>
+                                        <div class=" text-center pt-3">
+                                          <div class="row row-cols-auto">
+                                            <div class="col-3 pt-5">
+              
+                                              <p>All-risk insurance
+                                                Consolidated moves</p>
+                                            </div>
+                                            <div class="col-3 pt-5">
+              
+                                              <p>Fine art
+                                                Moving with pets</p>
+                                            </div>
+                                            <div class="col-3 pt-5">
+              
+                                              <p>Online tools
+                                                Professional packing</p>
+                                            </div>
+                                            <div class="col-3 pt-5">
+              
+                                              <p>Shipping Parcels
+                                                Virtual visit</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+              
+                                      <div class="col-5">
+                                        <h6 class="border-bottom pb-2">OUR CORPORATE SERVICES</h6>
+              
+                                        <div class=" text-center">
+                                          <div class="row row-cols-auto ">
+              
+                                            <div class="col-4">
+                                              <img src="./assest/img/choose ags/13.png" alt="">
+                                              <p>Office moves</p>
+                                            </div>
+                                            <div class="col-4">
+                                              <img src="./assest/img/choose ags/14.png" alt="">
+                                              <p>Hospitality <br> management</p>
+                                            </div>
+                                            <div class="col-4">
+                                              <img src="./assest/img/choose ags/15.png" alt="">
+                                              <p>General Cargo <br>Logistics Services</p>
+                                            </div>
+                                          </div>
+                                        </div>
+              
+                                        <h6 class="border-bottom pb-2 pt-3 ">MOVING TIPS</h6>
+                                        <div class=" text-start">
+                                          <div class="col col-rows-auto">
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href="">Training</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href="">Moving to Canada from France: tips & resources</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href="">Moving to France from the UK: tips & resources</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row">
+                                                <a href="">How to pack for your international move</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row">
+                                                <a href="">30 tips for your international move</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row">
+                                                <a href=""> Top 10 moving tips</a>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="row ">
+                                                <a href=""> Moving with children</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+              
+                              </div>
                             </li>
+                          
                             <li class="nav-item ms-3">
                                 <a class="nav-link" href="#">OUR HUBS</a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link" href="#">NEWS</a>
+                                <a class="nav-link" href="news.html">NEWS</a>
                             </li>
                         </ul>
                         <form class="d-flex ms-5">
@@ -78,41 +317,109 @@
         </downhead>
     </header>
 
-    <div class="section">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
-            data-bs-interval="1000">
-            <div class="carousel-inner">
+    <div id="section">
+        <div id="left">
+    
+          <div class="section">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assest/img/AGS-relocation-cursal-1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="./assest/img/AGS-relocation-cursal-1.jpg" class="d-block w-75 img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assest/img/AGS-relocation-cursal-2.jpg" class="d-block w-100" alt="...">
+                    <img src="./assest/img/AGS-relocation-cursal-2.jpg" class="d-block w-75" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assest/img/AGS-relocation-cursal-3.jpg" class="d-block w-100" alt="...">
+                    <img src="./assest/img/AGS-relocation-cursal-3.jpg" class="d-block w-75" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assest/img/AGS-relocation-cursal-4.jpg" class="d-block w-100" alt="...">
+                    <img src="./assest/img/AGS-relocation-cursal-4.jpg" class="d-block w-75" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assest/img/AGS-relocation-cursal-5.jpg" class="d-block w-100" alt="...">
+                    <img src="./assest/img/AGS-relocation-cursal-5.jpg" class="d-block w-75" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assest/img/AGS-relocation-cursal-6.jpg" class="d-block w-100" alt="...">
+                    <img src="./assest/img/AGS-relocation-cursal-6.jpg" class="d-block w-75" alt="...">
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+              </button>
+            </div>
+          </div>
+          
         </div>
-    </div>
+            
+        <div id="right">
+
+            <div id="ccarouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="/">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active ms-5 text-white">
+      
+      
+                  <h5>AGS Relocation Munich</h5>
+      
+                  <p class="pt-3">We are able to provide seamless relocation service <br>
+                     across the globe. Our service is tailored to meet the <br>
+                      individual needs of your business and international assignees.</p>
+      
+                  <div class="d-lg-flex list-unstyled text-white">
+                    <li><a href="#" class="btn w-100" id="btn0">CONTACT US</a></li>
+                    <li><a href="#" class="btn w-100 mt-lg-0 ms-lg-4 mt-sm-2">OUR SERVICES</a></li>
+                  </div>
+                </div>
+                <div class="carousel-item ms-5 text-white">
+      
+      
+                  <h5>AGS Relocation Amsterdam</h5>
+                  <p class="pt-3">We are able to provide seamless <br> relocation service across the globe. <br> Our service is tailored to meet the individual <BR> needs of your business and international assignees.</p>
+                  <div class="d-lg-flex list-unstyled text-white">
+                    <li><a href="#" class="btn w-100" id="btn2">CONTACT US</a></li>
+                    <li><a href="#" class="btn w-100 mt-lg-0 ms-lg-4 mt-sm-2">OUR SERVICES</a></li>
+                  </div>
+      
+                </div>
+    
+                <div class="carousel-item ms-5 text-white">
+      
+      
+                  <h5>AGS Relocation Dubai</h5>
+                  <p class="pt-3">Every single assignment is different. <br> Thats why our hub <br> in Dubai offers tailor-made solutions to suit <br> all your relocation needs in the Middle East.</p>
+                  <div class="d-lg-flex list-unstyled text-white">
+                    <li><a href="#" class="btn w-100" id="btn3">CONTACT US</a></li>
+                    <li><a href="#" class="btn w-100 mt-lg-0 ms-lg-4 mt-sm-2">OUR SERVICES</a></li>
+                  </div>
+      
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+      
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+      
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+    
+        </div>
+      </div>
+
 
     <!---end section-->
 
@@ -141,7 +448,7 @@
                 <div class="col-12 d-lg-flex justify-content-around">
                     <div class="col-lg-6 me-5">
                         <div class="img">
-                            <img src="./assest/img/ags-movers-individual-move-1.jpg" class="card-img-top" alt="..."
+                            <img src="./assest/img/ags-movers-coporation.jpg" class="card-img-top" alt="..."
                                 width="580px" height="300px">
                         </div>
                     </div>
@@ -204,7 +511,7 @@
                     <p>The 360˚ Solution enables your business to have leading edge mobility programmes in place with minimal outlay of resources on your part. Tailored to meet the specific needs of your business, our assignment management programmes allow you to outsource the administrative and management process.</p>
                  </div>
                  <div class="d-lg-flex justify-content-center">
-                    <li class="mb-3"><a href="#" class="btn mx-1 px-3 rounded-0" id="btnt">DISCOVER OUR 360° SOLUTIONS<i class="fa fa-eye ms-4"></i></a></li>
+                    <li class="mb-3"><a href="#" class="btn mx-1 px-3 rounded-0" id="btnt">DISCOVER OUR 360° SOLUTIONS<i class="fa-solid fa-angle-right ms-4"></i></a></li>
                     <li><a href="#" class="btn mx-1 px-5 border rounded-0 text-white">VIEW OUR BROCHURE<i class="fa fa-eye ms-4"></i></a></li>
                   </div>
             </div>
@@ -259,13 +566,16 @@
                 <div class="outer-cover">
                     <div class="inner-cover d-flex justify-content-between px-5">
                         <div class=""><a href="#"><img src="./assest/img/ags-group-logo.png" alt="" width="100%" height="100%"></a></div>
-                        <div><a href="#" class="///////text-black"><img src="./assest/img/ags-group-logo.png" alt="" width="50px" height="40px">REGIONAL SERVOCE CENTER</a></div>
-                        <div ><a href="#" class="text-black d-flex">
+                        <div><a href="#" class="text-black"><img src="./assest/img/ags-group-logo.png" alt="" width="50px" height="40px">REGIONAL SERVOCE CENTER</a></div>
+                        <div >
+                          <span><a href="#" class="text-black d-flex">
                             <svg height="100" width="100">
                                 <circle cx="50" cy="15" r="10" stroke="black" stroke-width="" fill="red" />
                               </svg>AGS LOCATION
-                         </a></div>
-                        <div ><a href="#" class="text-black">AGS PARTNERS</a></div>
+                         </a></span>
+                        </div>
+                        <div >
+                          <a href="#" class="text-black">AGS PARTNERS</a></div>
                     </div>
                 </div>
                </div>

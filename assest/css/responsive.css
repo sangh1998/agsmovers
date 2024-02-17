@@ -1,0 +1,35 @@
+@media only screen and (max-width:990px) {
+
+  .rightgroup {
+    background-color: #4e4463;
+    padding-top: -10px;
+  }
+
+  .rightgroup select {
+    background-color: #4e4463;
+    color: white;
+    width: 100px;
+    
+  }
+
+  #left {
+    display: none;
+  }
+  #section{
+    display: none;
+  }
+
+  #ccarouselExampleCaptions {
+
+    display: none;
+  }
+
+  .information .div {
+    display: none;
+  }
+
+  .information .div2 {
+    display: none;
+  }
+
+}

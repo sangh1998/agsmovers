@@ -1,308 +1,703 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-  }
+* , html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+body{
+  scroll-behavior: smooth !important;
+}
+.tophead {
+  background-color: #34313a;
+  font-size: 12px;
+}
+
+.navbar form {
+  margin-left: 2vh;
+}
+
+.tophead .d-lg-flex {
+  position: relative;
+  top: 8px;
+}
+
+.leftgroup a {
+  color: white;
+  display: inline-block;
+  transform: skewX(30deg);
+  padding: 10px;
+}
+
+.leftgroup a:hover {
+  color: #b91f25;
+
+}
+
+.leftgroup .btnt {
+  color: rgb(180, 28, 28);
+}
+
+.leftgroup li {
+
+  transform: skewX(-30deg);
+
+}
+
+.leftgroup .nav_link:hover {
+  transform: skew(-30deg);
+  
+ background-color: rgb(255, 255, 255);
+}
+
+.tophead .leftgroup li {
+  margin: -10px 10px;
+}
+
+@media only screen and (max-width:560px) {
   .tophead {
-    background-color: #34313a;
-    font-size: 12px;
-
-  }
-  .navbar form{
-    margin-left: 6vh;
-
-  }
-  .tophead .d-lg-flex{
-    position: relative;
-    top:8px;
-  }
-  .tophead .leftgroup a{
-    color:white;
-    display: inline-block;
-    transform: skewX(30deg);
-    padding: 10px;
-  }
-  .tophead .leftgroup a:hover{
-    color:#b00000;
-  }
-  .tophead .leftgroup li {
-    transform: skew(-30deg);
-    margin: -10px 10px;
-  }
-  .tophead .leftgroup li:hover{
-    background-color:rgb(248,249,250);
-  }
-  @media only screen and (max-width:560px){
-    .tophead{
-      font-size: 11px;
-    }
-    .tophead .rightgroup .justify-content-end{
-      margin-right: 110px;
-    }
-    .tophead .d-lg-flex{
-      position:relative;
-      top:0px;
-    }
-  }
-  .leftgroup  ul li{
-    margin-inline-end: 30px;
-  }
-  .rightgroup  ul li{
-    margin-inline-start: 22px;
-  }
-  .rightgroup select{
-    background-color:#34313a;
-    color:white;
-    width: 100px;
-  }
-  .navbar form{
-    margin:0;
-    
-  }
-  a{
-    text-decoration: none;
-    color:white;
-  }
-  .navbar form .btn , #footer-btn{
-    border:0px solid #b00000;
-    background-color: #b00000;
-    width: 150px;
-    height:30px;
-    position: relative;
-    left:0px;
-    font-weight:bold;
-    font-size:14px;
-
-  }
-  @media only screen and (max-width:560px){
-    .mid-section .container{
-        position: relative;
-         top:0px;
-    }
-}
-  .mid-section .container{
-    position: relative;
-         top:-50px;
-         z-index:10;
-         color:#b00000;
-  }
-  .information .btn{
-    border:1px solid #b00000;
-    border-radius: 0px;
-    padding:8px 20px;
-    color:#b00000;
-  }
-  .information #btn ,#btnt{
-    color:white;
-    background-color: #b00000;
-  }
-  .information .container .card-img-top:hover{
-    transform: scale(1.15);
-    transition-duration: 0.5s;
-  }
-  .information .container .img{
-    overflow: hidden;
-  }
-  @media only screen and (max-width:560px){
-    .information #btn ,#btnt{
-      margin-top: 10px;
-    }
-   .client .col-lg-6 {
-        text-align: center;
-    }
-    .client .text-justify{
-        text-align: justify;
-    }
-    
-  }
-
-  .client .text-justify{
-    text-align: justify;
-   }
-
-  .domestic .service-title{
-    font-size: 18px;
-    color: white;
-    padding-top: 15px;
-
-  }
-  .domestic .container img:hover{
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-  }
-  .domestic .text-center{
     font-size: 11px;
-    padding-top: 10px;
   }
-  .client .container .row p{
-    font-size: 15px;
-    line-height: 22px;
-  }
-  .world{
-    background-image: url(/assest/img/removals_bg.jpg);
-    width: 100%;
-    height: 40%;
-    background-size: cover;
-  }
-  .world .numbers ,.numbers-1{
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-    opacity: 1; 
-    transition: all 1s ease 0s;
-    text-shadow: 2px 2px 6px white ;
-  }
-  .world .numbers::before{
-    content: "+";
-    position: relative;
-    left:190px;
-    top:-30px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .world .numbers sub{
-    font-size: 20px;
-  }
-  .world .numbers-lable{
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: -30px;
-  }
-  .world .btn{
-    border:1px solid #b00000;
-    width: 250px;
-    text-align: center;
-    border-radius: 0%;
-    background-color: #b00000;
-    color:white;
-    font-weight: 500;
-    padding: 10px 50px;
-  }
- 
-  @media only screen and (max-width:560px){
-    .world .btn{
-        margin-left: 30%;
-    }
-  }
-.worldwide p{
-    font-size: 18px;
-    text-align: justify;
-    margin:0px 150px;
-    padding-top: 20px;
-}
-.worldwide .wide .btn{
-    border: 2px solid #b00000;
-    padding: 13px 60px;
-}
-.worldwide .wide #wide{
-    background-color: #b00000;
-    padding: 13px 50px;
-    border: 0px solid red;
-}
-.footer .row a{
-  color:#878191;
-}
-/*----ags group start--*/
 
-.ags-group .red .ags-card .rounded-0{
-  width: 21rem;
+  .tophead .rightgroup .justify-content-end {
+    margin-right: 110px;
+    
+  }
+
+  .tophead .d-lg-flex {
+    position: relative;
+    top: 0px;
+  }
+}
+
+.leftgroup ul li {
+  margin-inline-end: 30px;
+
+}
+
+.rightgroup ul li {
+  margin-inline-start: 22px;
+}
+.rightgroup ul li a{
+  color: white;
+}
+.rightgroup select {
+  background-color: #34313a;
+  color: white;
+  width: 100px;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+.navbar form .btn,
+#footer-btn {
+  border: 0px solid #b00000;
+  background-color: #b00000;
+  width: 150px;
+  height: 30px;
+  position: relative;
+  left: 0px;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+
+#section {
+  width: 100%;
+  height: 73vh;
+  position: relative;
+}
+
+#left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* If you make it 100%, you get a bit of black showing along the diagonal */
+  height: 70vh;
+  -webkit-clip-path: polygon(0 0%, 66% 0, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0%, 66% 0%, 50% 100%, 0% 100%);
+  z-index: 1;
+}
+
+
+
+#ccarouselExampleCaptions {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 70vh;
+  -webkit-clip-path: polygon(10% 10%, 100% 0, 100% 100%, 24% 100%);
+  clip-path: polygon(67% 0, 100% 0, 100% 100%, 51% 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(/assest/img/slider3-virtual-visit5.png);
+  background-size: cover;
+}
+
+
+
+#ccarouselExampleCaptions .carousel-inner {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+}
+#ccarouselExampleCaptions .carousel-inner .carousel-item{
+  position: absolute;
+right: 35%;
+top: 30%;
+}
+
+#ccarouselExampleCaptions .carousel-inner h5::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  margin: 15px 0px;
+  background-color: #b00000;
+  position: absolute;
+  display: block;
+}
+
+#ccarouselExampleCaptions .carousel-inner .btn {
+  border: 1px solid white;
+  color: white;
+}
+
+#ccarouselExampleCaptions .carousel-inner .btn:hover {
+  background-color: #b00000;
+}
+
+#ccarouselExampleCaptions.carousel-inner,
+#btn3,
+#btn2,
+#btn0 {
+  background-color: #b00000;
+  opacity: 0.7;
+}
+
+.button {
+  border-radius: 50%;
+  border: 2px solid #b00000;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 70px;
+  height: 70px;
+  z-index: 1000;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+
+}
+
+.button .fa-arrow-up {
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+
+@media only screen and (max-width:560px) {
+  .mid-section .container {
+    position: relative;
+    top: 0px;
+  }
   
 }
-.ags-group .red .ags-card .rounded-0 .extra{
-   background: rgba(0,0,0,0.4);
-   color:white;
-   font-weight: bold;
-   text-align: center;
-   padding:10px 30px
+
+
+.mid-section .container {
+  position: relative;
+  top: -50px;
+  z-index: 10;
+  color: #b00000;
 }
-.ags-group .red .ags-card .card-title{
- font-weight: bold;
- font-size: 18px;
- margin:10px 0px;
- text-align: center;
- color:#b91f25!important;
+
+.information .div {
+  position: absolute;
+  top: 8%;
+  left: 9.5%;
+  z-index: 1000;
+  width: 21vw;
+  height: 30vh;
+  background: #b00000;
+  -webkit-clip-path: polygon(0 0, 100% 0, 91% 18%, 9% 18%, 9% 39%, 0 18%);
+  clip-path: polygon(0 0, 100% 0, 95% 25%, 7% 25%, 7% 32%, 0% 25%);
+  font-size: 180%;
+  font-weight: 400;
+  color: white;
+  padding-left: 2%;
 }
-.ags-group .red .ags-card .card-text{
-  font-size: 14px;
-  text-align: center;
-  margin:0px 5px;
-  color:dimgrey;
-  margin-bottom: 15px;
-  line-height: 24px;
+
+.information .div2 {
+  position: absolute;
+  top: 8%;
+  left: 53.3%;
+  z-index: 1000;
+  width: 23vw;
+  height: 30vh;
+  background: #b00000;
+  -webkit-clip-path: polygon(0 0, 100% 0, 91% 18%, 9% 18%, 9% 39%, 0 18%);
+  clip-path: polygon(0 0, 100% 0, 95% 25%, 7% 25%, 7% 32%, 0% 25%);
+  font-size: 180%;
+  font-weight: 400;
+  color: white;
+  padding-left: 2%;
 }
-@media only screen and (max-width:560px){
-  .ags{
-    margin:50px 50px;
+
+.information {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.information .btn {
+  border: 1px solid #b00000;
+  border-radius: 0px;
+  padding: 8px 20px;
+  color: #b00000;
+}
+
+.information #btn,
+#btnt {
+  color: white;
+  background-color: #b00000;
+}
+
+.information .container .card-img-top:hover {
+  transform: scale(1.15);
+  transition-duration: 0.5s;
+}
+
+.information .container .img {
+  overflow: hidden;
+}
+
+@media only screen and (max-width:560px) {
+
+  .information #btn,
+  #btnt {
+    margin-top: 10px;
+  }
+
+  .client .col-lg-6 {
+    text-align: center;
+  }
+
+  .client .text-justify {
+    text-align: justify;
+  }
+
+  .information .div2 {
+    position: absolute;
+    top: 100%;
+    left: 53.3%;
+    z-index: 1000;
+    width: 23vw;
+    height: 30vh;
+    background: #b00000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 91% 18%, 9% 18%, 9% 39%, 0 18%);
+    clip-path: polygon(0 0, 100% 0, 95% 25%, 7% 25%, 7% 32%, 0% 25%);
+    font-size: 180%;
+    font-weight: 400;
+    color: white;
+    padding-left: 2%;
   }
 }
-/*----ags group end--*/
-.world-relocation{
-  background-image: url(/assest/img/ags-relocation-figures.jpg);
+
+.client .text-justify {
+  text-align: justify;
+}
+
+.domestic .service-title {
+  font-size: 18px;
+  color: white;
+  padding-top: 15px;
+
+}
+
+.domestic .container img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.domestic .text-center {
+  font-size: 11px;
+  padding-top: 10px;
+}
+
+.client .container .row p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.world {
+  background-image: url(/assest/img/removals_bg.jpg);
   width: 100%;
   height: 40%;
   background-size: cover;
 }
-.world-relocation .numbers ,.numbers-1{
+
+.world .numbers,
+.numbers-1 {
   font-size: 50px;
   font-weight: 700;
   text-align: center;
-  opacity: 1; 
+  opacity: 1;
   transition: all 1s ease 0s;
-  text-shadow: 2px 2px 6px white ;
+  text-shadow: 2px 2px 6px white;
 }
-.world-relocation .numbers-lable{
+
+.world .numbers::before {
+  content: "+";
+  position: relative;
+  left: 190px;
+  top: -30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.world .numbers sub {
+  font-size: 20px;
+}
+
+.world .numbers-lable {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
   margin-top: -30px;
 }
-.world-relocation .btn{
-  border:1px solid #b00000;
+
+.world .btn {
+  border: 1px solid #b00000;
   width: 250px;
   text-align: center;
   border-radius: 0%;
   background-color: #b00000;
-  color:white;
+  color: white;
   font-weight: 500;
   padding: 10px 50px;
 }
-.worldwide .outer-cover{
-  border:2px solid #878191;
-  height: 100%;
-  transform:skewX(-30deg)
+
+@media only screen and (max-width:560px) {
+  .world .btn {
+    margin-left: 30%;
+  }
 }
-.worldwide .inner-cover{
-  height:13vh;
+
+.worldwide p {
+  font-size: 18px;
+  text-align: justify;
+  margin: 0px 150px;
+  padding-top: 20px;
+}
+
+.worldwide .wide .btn {
+  border: 2px solid #b00000;
+  padding: 13px 60px;
+}
+
+.worldwide .wide #wide {
+  background-color: #b00000;
+  padding: 13px 50px;
+  border: 0px solid red;
+}
+
+.footer .row a {
+  color: #878191;
+}
+
+/*----ags group start--*/
+
+.ags-group .red .ags-card .rounded-0 {
+  width: 21rem;
+
+}
+
+.ags-group .red .ags-card .rounded-0 .extra a {
+  text-decoration: none;
+  color: white;
+}
+
+.ags-group .red .ags-card .rounded-0 .extra {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+  padding: 10px 0px;
+}
+
+.ags-group .red .ags-card .card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0px;
+  text-align: center;
+  color: #b91f25 !important;
+}
+
+.ags-group .red .ags-card .card-text {
+  font-size: 14px;
+  text-align: center;
+  margin: 0px 5px;
+  color: dimgrey;
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width:560px) {
+  .ags {
+    margin: 50px 50px;
+  }
+}
+
+/*----ags group end--*/
+.world-relocation {
+  background-image: url(/assest/img/ags-relocation-figures.jpg);
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+}
+
+.world-relocation .numbers,
+.numbers-1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 1;
+  transition: all 1s ease 0s;
+  text-shadow: 2px 2px 6px white;
+}
+
+.world-relocation .numbers-lable {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.world-relocation .btn {
+  border: 1px solid #b00000;
+  width: 250px;
+  text-align: center;
+  border-radius: 0%;
+  background-color: #b00000;
+  color: white;
+  font-weight: 500;
+  padding: 10px 50px;
+}
+
+.worldwide .outer-cover {
+  border: 2px solid #878191;
+  height: 100%;
+  transform: skewX(-30deg)
+}
+
+.worldwide .inner-cover {
+  height: 13vh;
   transform: skewX(30deg);
-  padding:20px 0px;
+  padding: 20px 0px;
   font-size: 12px;
   font-weight: bold;
   color: black;
 }
-.world-relocation #num1::before{
+
+.world-relocation #num1::before {
   content: "Km";
   position: relative;
-  left:150px;
-  top:-20px;
+  left: 150px;
+  top: -20px;
   font-size: 20px;
 }
-.world-relocation #num::before{
+
+.world-relocation #num::before {
   content: "Million";
   position: relative;
-  left:130px;
-  top:0px;
-  font-size:18px;
-}
-.center{
-  justify-content: center;
-  background-color: #878191;
-  border: 1px solid black;
-  width: 20%;
-  text-align: center;
-
+  left: 130px;
+  top: 0px;
+  font-size: 18px;
 }
 
 
+/* CAREER START */
 
+.container .cards .card {
+  border-radius: 0px;
+  border: 0px solid red;
+  position: relative;
+
+}
+
+.container .cards .card .card-text {
+  text-align: justify;
+}
+
+.container .cards .card .card-body .btn {
+  border: 2px solid #b00000;
+  border-radius: 0px;
+
+}
+
+/* CAREER END */
+
+/* payment start*/
+
+.pay-method .form-control .form-in{
+  width: 300px;
+  padding: 20px;
+}
+.pay-method .btn{
+  border: 1px solid #b00000;
+  color: white;
+  background-color: #b00000;
+}
+/*  */
+/* payment end */
+/* login start */
+
+.login{
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url(/assest/img/ags_group/userform_bg_image.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 400px;
+  text-align: center
+}
+.login .users{
+  padding: 50px;
+  color: white;
+  background-color: rgba(0, 255, 255, 0);
+  box-shadow: 0px 0px 40px rgb(255, 255, 255);
+  border-radius: 20px;
+  padding-bottom: 8rem;
+}
+.login .td{
+  color: white;
+}
+.copy{
+  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+}
+
+/* login end */
+
+
+
+
+/* 888888888888888888888888888888888    DROPWOWN MWNU 88888888888888888888888888888888888888 */
+    /* Dropdown content (hidden by default) */
+    .drop-content {
+      padding-top: 2%;
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 80vh;
+      left: 0;
+      z-index: 1;
+  }
+    /* Show the dropdown menu on hover */
+   .sho{
+    z-index: 2;
+      display: block;
+  }
+  .show{
+    display: block;
+    z-index: -2;
+}
+.dropbtn{
+  border: 0px;
+  background-color: white;
+ 
+}
+  /* Mega Menu header, if needed */
+  .drop-content .header {
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.9));
+      padding: 16px;
+      color: white;
+      
+  }
+
+
+
+  /* Style links inside the columns */
+  .column a {
+      float: none;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+  /* Add a background color on hover */
+  .column a:hover {
+      background-color: #ddd;
+  }
+
+  .header{
+      display: flex;
+  }
+  .drop-content p{
+    font-size: 16px;
+    color: #ccc;
+  }
+.drop-content .col-4 a{
+  font-size: 16px;
+  color: #ccc;
+}
+.drop-content .col-5 a{
+  font-size: 16px;
+  color: #ccc;
+}
+.drop-content .col-5 a:hover{
+  font-weight: bold;
+}
+.drop-content .col-4 a:hover{
+ 
+  font-weight: bold;
+}
+.drop-content .col-3:hover{
+  
+  transform: scale(1.05);
+}
+.drop-content .col-3{
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+/* 88888888888888888888888888888888888888888888888888888888888888888888888 */
+
+.pay-method ul{
+  list-style: none;
+}
+.pay-method ul a{
+  color: #34313a;
+  text-decoration: none;
+}
+.pay-method ul a:hover{
+  color:#b00000;
+}
+
+
+.news-card .card{
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 0px;
+}
+.news-card .card p{
+  color: black;
+  text-align: justify;
+  font-size: 13px;
+}
+.news-card .card .p{
+  color: black;
+  text-align: start;
+  font-size: 11px;
+}
+
+
+.nav-item .nav-link .drop-about{
+  background-color: red;
+}
 
